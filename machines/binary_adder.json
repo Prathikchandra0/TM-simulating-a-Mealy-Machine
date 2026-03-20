@@ -1,0 +1,72 @@
+{
+  "name": "Binary Adder",
+  "description": "Simulates binary addition. Outputs the sum of two binary numbers separated by a space.",
+  "states": [
+    "q0",
+    "q1",
+    "q2",
+    "q3",
+    "q4"
+  ],
+  "input_alphabet": [
+    "0",
+    "1",
+    " "
+  ],
+  "output_alphabet": [
+    "0",
+    "1"
+  ],
+  "initial_state": "q0",
+  "blank_symbol": "#",
+  "transitions": [
+    {
+      "from": "q0",
+      "input": "0",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "1",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": " ",
+      "to": "q1",
+      "output": "#"
+    },
+    {
+      "from": "q1",
+      "input": "0",
+      "to": "q1",
+      "output": "0"
+    },
+    {
+      "from": "q1",
+      "input": "1",
+      "to": "q1",
+      "output": "1"
+    },
+    {
+      "from": "q1",
+      "input": "#",
+      "to": "q2",
+      "output": "#"
+    },
+    {
+      "from": "q2",
+      "input": "#",
+      "to": "q3",
+      "output": "1"
+    },
+    {
+      "from": "q3",
+      "input": "#",
+      "to": "q4",
+      "output": "#"
+    }
+  ]
+}

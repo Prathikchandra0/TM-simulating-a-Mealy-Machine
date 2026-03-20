@@ -1,0 +1,57 @@
+{
+  "name": "Parity Checker (Even Parity)",
+  "description": "Checks if the number of 1s in the input is even. Outputs 0 for even, 1 for odd.",
+  "states": [
+    "q0",
+    "q1",
+    "q2"
+  ],
+  "input_alphabet": [
+    "0",
+    "1"
+  ],
+  "output_alphabet": [
+    "0",
+    "1"
+  ],
+  "initial_state": "q0",
+  "blank_symbol": "#",
+  "transitions": [
+    {
+      "from": "q0",
+      "input": "0",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "1",
+      "to": "q1",
+      "output": "#"
+    },
+    {
+      "from": "q1",
+      "input": "0",
+      "to": "q1",
+      "output": "#"
+    },
+    {
+      "from": "q1",
+      "input": "1",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "#",
+      "to": "q2",
+      "output": "0"
+    },
+    {
+      "from": "q1",
+      "input": "#",
+      "to": "q2",
+      "output": "1"
+    }
+  ]
+}

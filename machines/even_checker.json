@@ -1,0 +1,101 @@
+{
+  "name": "Even Number Checker",
+  "description": "Checks if a decimal number is even. Outputs 1 if the last digit is even, 0 if odd. (In binary: LSB determines parity)",
+  "states": [
+    "q0",
+    "q1",
+    "q2"
+  ],
+  "input_alphabet": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "output_alphabet": [
+    "0",
+    "1"
+  ],
+  "initial_state": "q0",
+  "blank_symbol": "#",
+  "transitions": [
+    {
+      "from": "q0",
+      "input": "0",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "1",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "2",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "3",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "4",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "5",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "6",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "7",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "8",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "9",
+      "to": "q0",
+      "output": "#"
+    },
+    {
+      "from": "q0",
+      "input": "#",
+      "to": "q1",
+      "output": "#"
+    },
+    {
+      "from": "q1",
+      "input": "#",
+      "to": "q2",
+      "output": "1"
+    }
+  ]
+}

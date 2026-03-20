@@ -1,0 +1,10 @@
+# Mealy Machine Turing Machine Simulator
+# Requirements file
+
+# Core dependencies (none required! Python standard library only)
+# Tkinter comes with Python by default
+
+# Optional enhancements (for advanced features)
+# matplotlib>=3.0.0  # For advanced visualizations
+# graphviz>=0.12     # For state diagram visualization
+# numpy>=1.15.0      # For performance optimization
